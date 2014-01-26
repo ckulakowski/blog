@@ -5,23 +5,20 @@
 
 body
 {
-  background:#ffafa 
-  image:url('http://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Gunks_Traps_-_Pitons_on_Shockley%27s_Ceiling_-_2.jpg/90px-Gunks_Traps_-_Pitons_on_Shockley%27s_Ceiling_-_2.jpg') no-repeat left center;
-  margin-left:100px;
-  
+  background: #ffafa;
 }
 h1
 {
-  color:navy;
-  text-align:center;
+  color: navy;
+  text-align: center;
 }
 h3
 {
-  colour: navy;
-  taxt-align:left;
+  color: 191970;
+  taxt-align: left;
 }
 p
 {
-  font-family:calibri;
-  font-size:20px;
+  font-family: calibri;
+  font-size: 20px;
 }
