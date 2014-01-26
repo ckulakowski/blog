@@ -18,12 +18,18 @@ h1
   color:navy;
   text-align:center;
 }
+h3
+{
+  colour: navy;
+  taxt-align:left;
+}
 p
 {
   font-family:calibri;
   font-size:20px;
 }
 <h1>:title</h1>
+<h3>:title</h3>
 <p>:body</p>
 </style>
 </html>
