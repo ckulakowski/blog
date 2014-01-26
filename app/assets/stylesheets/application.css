@@ -25,3 +25,17 @@ p {
 .post {
   padding-left: 20px;
 }
+
+.left-column {
+  width: 20%:
+  float: left;
+}
+
+.right-column {
+  width: 80%;
+  float: left;
+}
+
+.inner {
+  width: 90%;
+}
