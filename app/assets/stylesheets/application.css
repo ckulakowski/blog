@@ -3,22 +3,21 @@
  *= require twitter/bootstrap
  */
 
-body
-{
-  background: #ffafa;
+body {
+  background-color: #fffafa;
 }
-h1
-{
+
+h1 {
   color: navy;
   text-align: center;
 }
-h3
-{
-  color: 191970;
-  taxt-align: left;
+
+h3 a {
+  color: #191970;
+  text-align: left;
 }
-p
-{
+
+p {
   font-family: calibri;
   font-size: 20px;
 }
