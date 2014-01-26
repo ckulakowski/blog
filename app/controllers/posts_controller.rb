@@ -31,7 +31,7 @@ class PostsController < ApplicationController
     post = Post.new(post_params)
     
     if post.save
-      flash[:info] = 'Post successfully created!'
+      flash[:info] = "ERROR: #{post.errors.full_messages.to_sentence}"
     else
       flash[:error] = 'fail town'
     end
