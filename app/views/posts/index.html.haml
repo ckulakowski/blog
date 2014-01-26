@@ -1,9 +1,11 @@
 %h1 posts
-
+    
 - @posts.each do |post|
   = image_tag 'http://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Gunks_Traps_-_Pitons_on_Shockley%27s_Ceiling_-_2.jpg/90px-Gunks_Traps_-_Pitons_on_Shockley%27s_Ceiling_-_2.jpg', class: 'pull-left'
-  .post
+    .post.pull-left
     %h3= link_to post.title, post_path(post)
     %p= post.body
-
+    
+.clearfix
+%hr 
 = link_to "#{fa_icon('plus')} New Post".html_safe, new_post_path, class: 'btn btn-primary'
