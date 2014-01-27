@@ -8,8 +8,10 @@ body {
 }
 
 h1 {
-  color: #708090;
+  color: #000000;
   text-align: center;
+  background-image: url('http://3.bp.blogspot.com/-BIPUS3FTtI0/T1NePvwkiZI/AAAAAAAAITY/QMLLmRVI80M/s400/Alps+aust+inns.jpg');
+  background-position: center;
 }
 
 h3 a {
@@ -27,15 +29,15 @@ p {
 }
 
 .left-column {
-  width: 20%:
+  width: 10%:
   float: left;
 }
 
 .right-column {
-  width: 80%;
+  width: 90%;
   float: left;
 }
 
 .inner {
-  width: 90%;
+  width: 100%;
 }
