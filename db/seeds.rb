@@ -1,7 +1,13 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
-#
-# Examples:
-#
-#   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
-#   Mayor.create(name: 'Emanuel', city: cities.first)
+class CreateComments <ActiveRecord::Migration
+  def self.up
+    create_table :comments do |t|
+      t.column  :id,        :int
+      t.column  :body,      :text
+      t.column  :post_id,   :int
+    end
+  end            
+
+  def self.down
+    drop_table :comments
+  end
+end

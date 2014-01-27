@@ -3,6 +3,12 @@ class PostsController < ApplicationController
     @posts = Post.all
   end
   
+  def comment
+    Post.find(params[:id]) .comments.create(params[:comment])
+    flash[:notice] = "Added your comment"
+    redirect_to :action => "show", :id => params[:id]
+  end
+  
   def new
     @post = Post.new
   end
