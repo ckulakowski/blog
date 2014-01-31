@@ -14,6 +14,12 @@
 ActiveRecord::Schema.define(version: 20140127025957) do
 
   create_table "comments", force: true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "author",           null: false
+    t.text     "body",             null: false
+    t.integer  "commentable_id"
+    t.string   "commentable_type"
   end
 
   create_table "posts", force: true do |t|

@@ -1,0 +1,6 @@
+%h2 new comment
+
+= form_for @comment, url: post_comments_path(@post) do |t|
+  = t.text_field :author, placeholder: 'author'
+  = t.text_area :body, placeholder: 'body'
+  = t.submit 'Create Comment', class: 'btn btn-primary'

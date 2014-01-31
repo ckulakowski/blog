@@ -1,6 +1,9 @@
 class Post < ActiveRecord::Base
+  #validations 
   validates_presence_of :title
   validates_presence_of :body
-  has_many :comments
+  
+  #associations
+  has_many :comments, as: :commentable
 end
   

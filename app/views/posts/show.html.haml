@@ -1,9 +1,10 @@
 %h3= @post.title
 %p= @post.body
+- @post.comments.each do |comment|
+  %h5= comment.author
+  %p= comment.body
+  %hr
 
 = link_to 'Edit', edit_post_path(@post), class: 'btn btn-primary'
 = link_to 'Index', root_path, class: 'btn btn-default'
-
-%h2= @post.comments
-
-= link_to 'Edit', edit_post_path(@post), class: 'btn btn-primary'
+= link_to 'Comment', new_post_comment_path(@post), class: 'btn btn-default'
