@@ -1,7 +1,10 @@
 %h3= @post.title
 %p= @post.body
+
+%hr
+%h4 Comments
 - @post.comments.each do |comment|
-  %h5= comment.author
+  %h5 #{time_ago_in_word(comment_created_at)} ago
   %p= comment.body
   %hr
 
