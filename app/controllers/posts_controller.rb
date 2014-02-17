@@ -33,9 +33,9 @@ class PostsController < ApplicationController
     post = Post.new(post_params)
     
     if post.save
-      flash[:info] = "ERROR: #{post.errors.full_messages.to_sentence}"
+      flash[:info] = "Success!"
     else
-      flash[:error] = 'fail town'
+      flash[:error] = "ERROR: #{post.errors.full_messages.to_sentence}"
     end
     
     redirect_to post_path(post)
