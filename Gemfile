@@ -11,6 +11,7 @@ gem 'jquery-rails'
 gem 'pg'
 gem 'pry'
 gem 'rails', '4.0.0'
+gem 'rails_serve_static_assets'
 gem 'sass-rails', '~> 4.0.0'
 
 gem 'turbolinks'
